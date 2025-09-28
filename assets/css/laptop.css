@@ -1,0 +1,79 @@
+.laptop-repair {
+ padding: 50px 0 60px;
+}
+
+.laptop-repair__wrapper {
+ display: flex;
+ gap: 30px;
+}
+
+.laptop-repair__image {
+ flex: 1 1 100%;
+ max-width: 430px;
+}
+
+.laptop-repair__img {
+ width: 430px;
+ height: 287px;
+ flex-shrink: 0;
+ aspect-ratio: 430/287;
+ object-fit: cover;
+}
+
+.laptop-repair__content {
+ display: flex;
+ flex-direction: column;
+}
+
+.laptop-repair__title {
+ margin-bottom: 32px;
+}
+
+.laptop-repair__description {
+ color: #000;
+ font-family: Montserrat;
+ font-size: 16px;
+ font-weight: 400;
+ line-height: 150%;
+ margin-bottom: 20px;
+}
+
+.laptop-repair__button {
+ margin-top: auto;
+}
+
+
+@media (max-width: 768px) {
+ .laptop-repair__wrapper {
+  gap: 12px;
+  flex-direction: column;
+ }
+
+ .laptop-repair__title {
+  display: none;
+ }
+
+ .laptop-repair__img {
+  width: 100%;
+ }
+
+ .laptop-repair__description {
+  font-size: 14px;
+  margin-bottom: 0px;
+ }
+
+ .laptop-repair__button {
+  margin-top: 24px;
+  margin-inline: auto;
+ }
+
+ .laptop-repair {
+  padding: 16px 0 32px;
+ }
+}
+
+@media (max-width: 500px) {
+ .laptop-repair__img {
+  height: auto;
+ }
+}

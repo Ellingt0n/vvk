@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оставить заявку</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/zapros.css">
+</head>
+
+<body>
+    <div class="page">
+        <header class="header">
+        </header>
+
+        <main class="main">
+            <div class="zapros-page">
+                <div class="container">
+                    <h1 class="zapros-page__title">Тестовая страница для попапа</h1>
+                    <p class="zapros-page__text">Нажмите на кнопку ниже, чтобы открыть форму заявки:</p>
+                    <button type="button" class="btn btn--blue" id="openPopupBtn">Оставить заявку</button>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+        </footer>
+
+        <!-- Попап -->
+        <div class="popup-overlay" id="popupOverlay">
+            <div class="popup">
+                <button type="button" class="popup__close" id="closePopupBtn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+
+                <div class="popup__content">
+                    <h2 class="popup__title h32">ОСТАВЬТЕ ВАШУ ЗАЯВКУ</h2>
+
+                    <form class="popup__form" id="requestForm">
+                        <div class="form-group">
+                            <label for="organization" class="form-label">Название организации/ Имя</label>
+                            <input type="text" id="organization" class="form-input"
+                                placeholder="Введите название организации/ имя" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Телефон</label>
+                            <input type="tel" id="phone" class="form-input" placeholder="+7 (___) ___-__-__" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" class="form-input" placeholder="Введите email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="workType" class="form-label">Вид необходимых работ</label>
+                            <textarea id="workType" class="form-textarea" placeholder="Опишите необходимые работы"
+                                rows="4" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn--red form-submit">Отправить заявку</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="assets/js/libs/jquery.min.js"></script>
+    <script src="assets/js/base.js"></script>
+    <script src="assets/js/zapros.js"></script>
+</body>
+
+</html>

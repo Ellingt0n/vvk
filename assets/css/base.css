@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: 'Kreadon';
+    src: url('../fonts/Kreadon-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kreadon';
+    src: url('../fonts/Kreadon-Demi.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    color: #232126;
+}
+
+body.lock {
+    overflow: hidden;
+}
+
+h5,
+h4,
+h3,
+h2,
+h1 {
+    margin: 0;
+    color: inherit;
+    font-family: inherit;
+}
+
+.h5,
+.h4,
+.h3,
+.h2,
+.h1 {
+    margin: 0;
+    color: inherit;
+    font-family: inherit;
+}
+
+.h1 {}
+
+.h2 {}
+
+.h3 {}
+
+.h4 {}
+
+.h5 {}
+
+.h32 {
+    font-family: Kreadon;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.32px;
+    text-transform: uppercase;
+}
+
+.h20 {
+    color: #000;
+    font-family: Kreadon;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+}
+
+p {
+    margin: 0;
+}
+
+ol,
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+input,
+textarea {
+    border: none;
+    outline: none;
+    font-family: inherit;
+    margin: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+
+
+/* Класс для инпутов */
+.input {}
+
+
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100 * var(--vh));
+}
+
+.container {
+    max-width: 1380px;
+    padding: 0 15px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page {
+    flex-grow: 1;
+}
+
+.header {}
+
+.footer {}
+
+
+
+
+
+.page-title {
+    padding: 32px 0;
+}
+
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    flex-wrap: wrap;
+}
+
+.breadcrumbs__link {
+    color: #000;
+    font-family: Kreadon;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 130%;
+    letter-spacing: 0.4px;
+    transition: all .3s;
+}
+
+.breadcrumbs__link:hover {
+    color: #00438A;
+}
+
+.breadcrumbs__separator {
+    line-height: 0;
+}
+
+.breadcrumbs__separator svg {
+    width: 20px;
+    height: 20px;
+}
+
+.breadcrumbs__current {
+    color: #00438A;
+    font-family: Kreadon;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+}
+
+.btn--blue {
+    padding: 8px 32px;
+    height: 40px;
+    width: fit-content;
+    border: 1px solid #00438A;
+    background: #00438A;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 150%;
+    display: flex;
+    font-family: Montserrat;
+    align-items: center;
+    transition: all .3s;
+}
+
+.btn--blue:hover {
+    background: #000;
+    border: 1px solid #000;
+}
+
+.swiper-button-disabled {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+
+.pricing__table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #99B4D0;
+}
+
+.pricing__table th,
+.pricing__table td {
+    padding: 16px 24px;
+    text-align: center;
+    border: 1px solid #99B4D0;
+}
+
+.pricing__table th {
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.pricing__table td {
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.why-choose {
+    padding: 50px 0 100px;
+}
+
+.why-choose__title {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
+    background: #99B4D0;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: #E61010;
+}
+
+.section__title--mob {
+    display: none;
+}
+
+.btn--outline {
+    padding: 4px 32px;
+    border: 1px solid #00438A;
+    background: #FFF;
+    color: #00438A;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 150%;
+    transition: all .3s;
+}
+
+.btn--outline:hover {
+    background: #00438A;
+    color: #fff;
+}
+
+.page__title {
+    text-align: center;
+    margin-top: 32px;
+}
+
+@media (max-width: 768px) {
+    .page-title {
+        padding: 16px 0;
+    }
+
+    .breadcrumbs__link {
+        font-size: 14px;
+    }
+
+    .breadcrumbs__current {
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: none;
+    }
+
+    .h20 {
+        font-size: 16px;
+    }
+
+    .h32 {
+        font-size: 20px;
+    }
+
+    .btn--blue {
+        padding: 6px 16px;
+        height: auto;
+        font-size: 16px;
+    }
+
+    .swiper-pagination-clickable .swiper-pagination-bullet {
+        width: 8px !important;
+        height: 8px !important;
+    }
+
+    .pricing__table th,
+    .pricing__table td {
+        padding: 4px 0;
+        text-align: left;
+        border: none;
+        border-bottom: 1px solid #99B4D0;
+    }
+
+    .pricing__table {
+        border: none;
+    }
+
+    .pricing__table th {
+        color: #999;
+        font-size: 13px;
+        line-height: 150%;
+        padding: 0;
+        padding-left: 4px;
+    }
+
+    .pricing__table td {
+        font-size: 14px;
+    }
+
+    .section__title--mob {
+        display: block;
+        color: #000;
+        font-family: Kreadon;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%;
+        letter-spacing: 0.4px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .why-choose {
+        padding: 16px 0;
+    }
+
+    .why-choose__title {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+    .pricing__table td:last-child {
+        white-space: nowrap;
+        padding-left: 15px;
+    }
+
+    .pricing__table th:last-child {
+        padding-left: 15px;
+    }
+
+    .btn--outline {
+        padding: 6px 16px;
+        font-size: 16px;
+    }
+
+    .page__title {
+        text-align: center;
+        margin-top: 16px;
+    }
+}

@@ -1,0 +1,299 @@
+.hero-section {
+ padding-bottom: 50px;
+}
+
+.hero-section__top {
+ display: flex;
+ gap: 30px;
+}
+
+.hero-section__image {
+ flex: 0 0 430px;
+ max-width: 430px;
+ width: 430px;
+}
+
+.hero-section__image img {
+ width: 430px;
+ height: 200px;
+ flex-shrink: 0;
+ aspect-ratio: 43/20;
+}
+
+.hero-section__title {
+ margin-bottom: 32px;
+ color: #000;
+}
+
+.hero-section__text {
+ color: #000;
+ font-size: 16px;
+ font-weight: 400;
+ line-height: 150%;
+}
+
+.hero-section__text p {
+ margin-bottom: 15px;
+}
+
+.hero-section__text p:last-child {
+ margin-bottom: 0;
+}
+
+.time-blocks {
+ padding: 50px 0 60px;
+}
+
+
+.time-blocks__list {
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ gap: 30px;
+}
+
+.time-blocks__item {
+ display: flex;
+ align-items: center;
+ gap: 16px;
+}
+
+.time-blocks__item-img {
+ line-height: 0;
+}
+
+.time-blocks__item-img img {
+ min-width: 80px;
+ width: 80px;
+ height: 80px;
+ object-fit: cover;
+}
+
+.time-blocks__text {
+ color: #000;
+ font-size: 20px;
+ font-weight: 500;
+ line-height: 150%;
+}
+
+.benefits {
+ padding: 100px 0;
+ background: var(--blue_white95, linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #00438A);
+}
+
+.benefits__title {
+ text-align: center;
+}
+
+.benefits__list {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ grid-auto-rows: min-content;
+ gap: 16px 30px;
+ margin-top: 30px;
+}
+
+.benefits__column {
+ display: grid;
+ gap: 16px;
+
+}
+
+.benefits__item {
+ display: flex;
+ align-items: flex-start;
+ gap: 12px;
+}
+
+.benefits__item::before {
+ content: "";
+ min-width: 5px;
+ width: 5px;
+ height: 5px;
+ aspect-ratio: 1;
+ display: block;
+ background: #E61010;
+ border-radius: 999px;
+ margin-top: 12px;
+}
+
+.benefits__text {
+ color: #000;
+ font-size: 20px;
+ font-weight: 500;
+ line-height: 150%;
+}
+
+.pricing {
+ padding: 100px 0;
+}
+
+.pricing__title {
+ text-align: center;
+}
+
+.pricing__content {
+ margin-top: 30px;
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ gap: 30px;
+ align-items: start;
+}
+
+.pricing__text {
+ color: #000;
+ font-size: 16px;
+ font-weight: 400;
+ line-height: 150%;
+}
+
+.pricing__text p {
+ margin-bottom: 15px;
+}
+
+.pricing__text p:last-child {
+ margin-bottom: 0;
+}
+
+.pricing__button {
+ display: flex;
+ justify-content: center;
+ margin-top: 30px;
+}
+
+.hero-section__title--mob {
+ display: none;
+}
+
+@media (max-width: 1024px) {
+ .time-blocks__list {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+ }
+
+ .hero-section__image {
+  flex: 0 0 330px;
+  max-width: 330px;
+  width: 330px;
+ }
+
+ .hero-section__image img {
+  width: 330px;
+  height: 170px;
+ }
+}
+
+@media (max-width: 768px) {
+ .hero-section__top {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+ }
+
+ .time-blocks__list {
+  grid-template-columns: repeat(1, 1fr);
+  gap: 16px;
+ }
+
+ .hero-section__image {
+  flex: 1;
+  max-width: 100%;
+  width: 100%;
+ }
+
+ .hero-section__content .hero-section__title {
+  display: none;
+ }
+
+ .hero-section__title--mob {
+  display: block;
+  color: #000;
+  font-family: Kreadon;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 4px;
+ }
+
+ .hero-section__text {
+  color: #000;
+  font-size: 14px;
+ }
+
+ .hero-section__text p {
+  margin-bottom: 10px;
+ }
+
+ .hero-section {
+  padding-bottom: 16px;
+ }
+
+ .time-blocks {
+  padding: 32px 0 16px;
+ }
+
+ .time-blocks__item-img img {
+  min-width: 48px;
+  width: 48px;
+  height: 48px;
+ }
+
+ .time-blocks__text {
+  color: #000;
+  font-size: 16px;
+ }
+
+ .time-blocks__item {
+  gap: 8px;
+ }
+
+ .benefits {
+  padding: 32px 0;
+ }
+
+ .benefits__list {
+  gap: 8px;
+  margin-top: 16px;
+  grid-template-columns: 1fr;
+ }
+
+ .benefits__text {
+  font-size: 14px;
+  font-weight: 400;
+ }
+
+ .benefits__item::before {
+  margin-top: 7px;
+ }
+
+ .pricing {
+  padding: 32px 0;
+ }
+
+ .pricing__title {
+  font-size: 20px;
+ }
+
+ .pricing__content {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 16px;
+ }
+
+ .pricing__text p {
+  margin-bottom: 10px;
+ }
+
+ .pricing__text {
+  font-size: 14px;
+ }
+
+ 
+ .pricing__button {
+  margin-top: 24px;
+ }
+}

@@ -1,0 +1,449 @@
+.about {
+ padding: 50px 0 60px;
+}
+
+.about__title {
+ text-align: center;
+ margin-bottom: 32px;
+}
+
+.about__wrapper {
+ display: flex;
+ gap: 30px;
+}
+
+.about__image {
+ flex: 1 1 100%;
+ max-width: 430px;
+ position: relative;
+ height: fit-content;
+ box-shadow: 2px 4px 10px 0 rgba(0, 67, 138, 0.05);
+}
+
+.about__img {
+ width: 430px;
+ flex: 1 0 0;
+ aspect-ratio: 215/136;
+ object-fit: cover;
+}
+
+.about__image-info {
+ padding: 8px 16px;
+ background: #FFF;
+ position: absolute;
+ bottom: 0;
+ width: 100%;
+}
+
+.about__image-info-subtitle {
+ color: #000;
+ font-size: 14px;
+ font-weight: 400;
+ line-height: 130%;
+ margin-bottom: 4px;
+}
+
+.about__image-info-title {
+ color: #000;
+ font-size: 20px;
+ font-weight: 500;
+ line-height: 150%;
+}
+
+.about__content {}
+
+.about__description {
+ color: #000;
+ font-family: Montserrat;
+ font-size: 16px;
+ font-weight: 400;
+ line-height: 150%;
+}
+
+.about__advantages {
+ margin-top: 24px;
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ gap: 30px;
+}
+
+.about__advantage {
+ text-align: center;
+}
+
+.about__advantage-icon {
+ line-height: 0;
+}
+
+.about__advantage-icon img {
+ width: 80px;
+ height: 80px;
+ aspect-ratio: 1/1;
+ object-fit: contain;
+}
+
+
+.about__advantage-text {
+ color: #000;
+ text-align: center;
+ font-size: 16px;
+ font-weight: 500;
+ line-height: 150%;
+}
+
+
+.team {
+ padding: 50px 0 100px;
+}
+
+.team__title {
+ text-align: center;
+ margin-bottom: 30px;
+}
+
+.team__grid {
+ display: grid;
+ grid-template-columns: repeat(6, 1fr);
+ gap: 30px;
+}
+
+/* Стили для десктопа когда Swiper не активен */
+@media (min-width: 769px) {
+ .team__wrapper {
+  display: contents;
+ }
+
+ .team__pagination {
+  display: none;
+ }
+}
+
+.team__member {
+ position: relative;
+ box-shadow: 2px 4px 10px 0 rgba(0, 67, 138, 0.05);
+}
+
+.team__member-image {
+ line-height: 0;
+}
+
+.team__member-image img {
+ width: 100%;
+ max-width: 200px;
+ flex: 1 0 0;
+ aspect-ratio: 2/3;
+ object-fit: cover;
+}
+
+.team__member-info {
+ padding: 8px 12px;
+ position: absolute;
+ bottom: 0;
+ width: 100%;
+ background: #FFF;
+ height: 100px;
+}
+
+.team__member-position {
+ color: #000;
+ font-size: 14px;
+ font-weight: 400;
+ line-height: 130%;
+ max-height: 36px;
+ overflow: hidden;
+}
+
+.team__member-name {
+ color: #000;
+ font-size: 16px;
+ font-weight: 500;
+ line-height: 150%;
+ height: 48px;
+ overflow: hidden;
+}
+
+.partners {
+ padding: 100px 0;
+ background: var(--blue_white95, linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #00438A);
+}
+
+.partners__title {
+ text-align: center;
+ margin-bottom: 32px;
+}
+
+.partners__content {
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ gap: 30px;
+}
+
+.partners__text {}
+
+.partners__description {
+ color: #000;
+ font-size: 16px;
+ font-weight: 400;
+ line-height: 150%;
+ margin-bottom: 8px;
+}
+
+.partners__highlight {
+ color: #000;
+ font-size: 20px;
+ font-weight: 500;
+ line-height: 150%;
+}
+
+.partners__action {
+ text-align: center;
+}
+
+.partners__action-text {
+ color: #000;
+ text-align: center;
+ font-size: 16px;
+ font-weight: 400;
+ line-height: 150%;
+}
+
+.partners__button {
+ width: 346px;
+ margin-top: 8px;
+}
+
+
+.franchise {
+ padding: 100px 0;
+}
+
+.franchise__title {
+ margin-bottom: 32px;
+ text-align: center;
+}
+
+.franchise__content {
+ display: flex;
+ gap: 30px;
+}
+
+.franchise__image {
+ flex: 1 1 100%;
+ max-width: 430px;
+}
+
+.franchise__image img {
+ width: 430px;
+ height: 234.03px;
+ flex-shrink: 0;
+ object-fit: cover;
+}
+
+.franchise__text {
+ color: #000;
+ font-size: 16px;
+ font-weight: 400;
+ line-height: 150%;
+ max-width: 660px;
+}
+
+.franchise__text p {
+ margin-bottom: 15px;
+}
+
+.franchise__text p:last-child {
+ margin-bottom: 0;
+}
+
+.franchise__button {
+ margin-top: 8px;
+ width: 346px;
+ margin-inline: auto;
+ text-align: center;
+ justify-content: center;
+}
+
+
+@media (max-width: 1024px) {
+ .about__wrapper {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  align-items: center;
+ }
+
+ .team__grid {
+  grid-template-columns: repeat(4, 1fr);
+ }
+
+ .franchise__content {
+  flex-direction: column;
+  align-items: center;
+ }
+}
+
+@media (max-width: 768px) {
+ .about__img {
+  width: 100%;
+ }
+
+ .about__image-info {
+  padding: 4px 8px;
+ }
+
+ .about {
+  padding: 0 0 16px;
+ }
+
+ .about__title {
+  margin-bottom: 12px;
+ }
+
+ .about__image-info-title {
+  font-size: 16px;
+ }
+
+ .about__image-info-subtitle {
+  margin-bottom: 0px;
+ }
+
+ .about__wrapper {
+  gap: 12px;
+ }
+
+ .about__description {
+  font-size: 14px;
+ }
+
+ .about__advantages {
+  margin-top: 32px;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+ }
+
+ .about__advantage-icon img {
+  width: 60px;
+  height: 60px;
+ }
+
+ .team {
+  padding: 16px 0 32px;
+ }
+
+ .team__title {
+  margin-bottom: 12px;
+ }
+
+ .team__grid {
+  display: block;
+  padding: 0 10px;
+  margin: 0 -10px;
+ }
+
+ .team__wrapper {
+  display: flex;
+ }
+
+ .team__member {
+  box-sizing: border-box;
+  width: 100%;
+ }
+
+ .team__member-image img {
+  max-width: none;
+  width: 100%;
+ }
+
+ .team__pagination {
+  margin-top: 12px;
+  position: static;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+ }
+
+ .team__member-info {
+  padding: 4px 8px;
+  left: -2px;
+  width: 102%;
+  height: 85px;
+ }
+
+ .team__member-position {
+  font-size: 12px;
+  max-height: 32px;
+ }
+
+ .team__member-name {
+  font-size: 14px;
+  height: 38px;
+ }
+
+ .partners__content {
+  grid-template-columns: 1fr;
+  gap: 8px;
+ }
+
+ .partners {
+  padding: 32px 0;
+ }
+
+ .partners__title {
+  margin-bottom: 16px;
+ }
+
+ .partners__description {
+  font-size: 14px;
+  margin-bottom: 0;
+ }
+
+ .partners__highlight {
+  font-size: 16px;
+ }
+
+ .partners__action-text {
+  text-align: left;
+  font-size: 14px;
+ }
+
+ .partners__button {
+  width: fit-content;
+ }
+
+ .franchise {
+  padding: 32px 0 60px;
+ }
+
+ .franchise__title {
+  margin-bottom: 12px;
+ }
+
+ .franchise__image img {
+  width: 100%;
+  height: 234.03px;
+  object-fit: contain;
+ }
+
+ .franchise__content {
+  gap: 15px;
+ }
+
+ .franchise__text {
+  font-size: 14px;
+ }
+
+ .franchise__text p {
+  margin-bottom: 10px;
+ }
+
+ .franchise__button {
+  margin-top: 24px;
+  width: fit-content;
+ }
+}
+
+@media (max-width: 500px) {
+ .about__advantages {
+  grid-template-columns: 1fr;
+ }
+}

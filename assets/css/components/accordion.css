@@ -1,0 +1,102 @@
+.accordion__item.is-active .accordion__icon svg {
+    transform: rotate(180deg);
+}
+
+.accordion__icon svg {
+    transition: transform 0.3s ease;
+}
+
+.accordion__content {
+    overflow: hidden;
+}
+
+.accordion {
+    display: flex;
+    gap: 32px;
+}
+
+.accordion__column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.accordion__item {
+    margin-left: 17px;
+}
+
+.accordion__header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 0;
+    border-bottom: 1px solid #00438A;
+    position: relative;
+}
+
+.accordion__header::before {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -17px;
+    background: #E61010;
+    border-radius: 999px;
+}
+
+.accordion__title {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.accordion__icon {
+    padding: 16px;
+    display: block;
+    line-height: 0;
+}
+
+.accordion__content {
+    margin-top: 10px;
+}
+
+.accordion__text {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+@media (max-width: 768px) {
+    .accordion {
+        flex-direction: column;
+    }
+
+    .accordion__title {
+        font-size: 16px;
+        font-weight: 400;
+        text-align: left;
+    }
+
+    .accordion__icon {
+        padding: 10px;
+    }
+
+    .accordion__text {
+        font-size: 13px;
+    }
+
+    .accordion {
+        gap: 16px;
+    }
+}

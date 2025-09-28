@@ -1,0 +1,190 @@
+.printer-repair {
+ padding-bottom: 60px;
+}
+
+.printer-repair__wrapper {
+ display: flex;
+ gap: 30px;
+}
+
+.printer-repair__image {
+ flex: 1 1 100%;
+ width: 430px;
+ max-width: 430px;
+ display: flex;
+ justify-content: center;
+}
+
+.printer-repair__img {
+ width: 285px;
+ height: 268px;
+ flex-shrink: 0;
+ aspect-ratio: 285/268;
+ object-fit: cover;
+}
+
+.printer-repair__content {}
+
+.printer-repair__title {
+ margin-bottom: 32px;
+}
+
+.printer-rapair__text {
+ color: #000;
+ font-family: Montserrat;
+ font-size: 16px;
+ font-weight: 400;
+ line-height: 150%;
+ margin-bottom: 24px;
+}
+
+.printer-rapair__text p {
+ margin-bottom: 15px;
+}
+
+.printer-rapair__text p:last-child {
+ margin-bottom: 0;
+}
+
+.printer-brands {
+ padding: 50px 0;
+}
+
+.printer-brands__wrapper {
+ display: grid;
+ grid-template-columns: repeat(5, 1fr);
+}
+
+.printer-brands__logo {
+ width: 100%;
+ height: 44px;
+ object-fit: cover;
+}
+
+
+.service-price {
+ padding: 100px 0 50px;
+}
+
+.service-price__title {
+ text-align: center;
+ margin-bottom: 30px;
+}
+
+.service-price__content {
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ gap: 30px;
+}
+
+.service-price__description {
+ color: #000;
+ font-family: Montserrat;
+ font-size: 16px;
+ font-weight: 400;
+ line-height: 150%;
+}
+
+.service-price__button {
+ margin-top: 30px;
+ margin-inline: auto;
+}
+
+.popular-models {
+ padding: 50px 0 100px;
+}
+
+@media (max-width: 1300px) {
+ .printer-brands__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+ }
+}
+
+
+@media (max-width: 768px) {
+ .printer-repair__wrapper {
+  gap: 12px;
+  flex-direction: column;
+  width: 100%;
+ }
+
+ .printer-repair__image {
+  flex: 1 1 100%;
+  width: auto;
+  max-width: 100%;
+ }
+
+ .printer-repair {
+  padding: 16px 0;
+ }
+
+ .printer-repair__img {
+  height: auto;
+ }
+
+ .printer-repair__title {
+  display: none;
+ }
+
+ .printer-rapair__text {
+  font-size: 14px;
+  margin-bottom: 24px;
+ }
+
+ .printer-rapair__text p {
+  margin-bottom: 10px;
+ }
+
+ .printer-repair__button {
+  margin: 0 auto;
+ }
+
+ .printer-brands__item {
+  width: 100%;
+ }
+
+ .printer-brands__logo {
+  height: 35px;
+ }
+
+ .printer-brands {
+  padding: 16px 0;
+ }
+
+ .service-price__content {
+  grid-template-columns: 1fr;
+  gap: 16px;
+ }
+
+ .service-price {
+  padding: 32px 0 16px;
+ }
+
+ .service-price__title {
+  font-size: 20px;
+  margin-bottom: 12px;
+ }
+
+ .service-price__description {
+  font-size: 14px;
+ }
+
+ .service-price__button {
+  margin-top: 24px;
+ }
+
+ .popular-models {
+  padding: 16px 0 32px;
+ }
+}
+
+@media (max-width: 500px) {
+ .printer-brands__logo {
+  height: 32px;
+ }
+
+ .printer-repair__img {
+  width: 100%;
+ }
+}

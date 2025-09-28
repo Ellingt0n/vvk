@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Продажа запчастей</title>
+ <link rel="stylesheet" href="assets/css/libs/swiper-bundle.min.css">
+ <link rel="stylesheet" href="assets/css/base.css">
+ <link rel="stylesheet" href="assets/css/catalog.css">
+</head>
+
+<body>
+ <div class="page">
+  <header class="header">
+  </header>
+
+  <main class="main">
+   <div class="page-title">
+    <div class="container">
+     <div class="breadcrumbs">
+      <a href="/" class="breadcrumbs__link">Главная</a>
+      <span class="breadcrumbs__separator">
+       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path d="M7.5 15L12.5 10L7.5 5" stroke="#00438A" stroke-linecap="round" stroke-linejoin="round" />
+       </svg>
+      </span>
+      <span class="breadcrumbs__current">Продажа б/у запчастей для оргтехники</span>
+     </div>
+     <h1 class="page__title h32">
+      Продажа б/у запчастей для оргтехники
+     </h1>
+    </div>
+   </div>
+
+   <section class="catalog">
+    <div class="container">
+     <!-- Overlay для мобильных фильтров -->
+     <div class="catalog__sidebar-overlay" id="sidebarOverlay"></div>
+
+     <div class="catalog__wrapper">
+      <aside class="catalog__sidebar">
+       <div class="catalog__sidebar-wrapper">
+        <div class="catalog__sidebar-filter-mob">
+         <img src="assets/img/catalog/filter.png" alt="">
+        </div>
+        <h2 class="catalog__title">КАТАЛОГ Б/У ЗАПЧАСТЕЙ ДЛЯ ОРГТЕХНИКИ</h2>
+        <div class="catalog__filters">
+
+         <div class="filter-group">
+          <button class="filter-group__header filter-group__header--no-submenu" type="button">
+           <span class="filter-group__title">Brother</span>
+          </button>
+         </div>
+
+         <div class="filter-group filter-group--active">
+          <button class="filter-group__header" type="button">
+           <span class="filter-group__title">Canon</span>
+           <svg class="filter-group__icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+             stroke-linejoin="round" />
+           </svg>
+          </button>
+          <div class="filter-group__content">
+           <div class="filter-item">
+            <button class="filter-item__link" type="button">Копир</button>
+           </div>
+           <div class="filter-item">
+            <button class="filter-item__link" type="button">МФУ</button>
+           </div>
+           <div class="filter-item filter-item--active">
+            <button class="filter-item__header" type="button">
+             <span class="filter-item__title">Принтер</span>
+             <svg class="filter-item__icon" width="12" height="12" viewBox="0 0 12 12" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+               stroke-linejoin="round" />
+             </svg>
+            </button>
+            <div class="filter-item__content">
+             <div class="filter-subitem">
+              <button class="filter-subitem__link" type="button">Цветной</button>
+             </div>
+             <div class="filter-subitem filter-subitem--active">
+              <button class="filter-subitem__header" type="button">
+               <span class="filter-subitem__title">Черно-белый</span>
+               <svg class="filter-subitem__icon" width="10" height="10" viewBox="0 0 10 10" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.5 3.75L5 6.25L7.5 3.75" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                 stroke-linejoin="round" />
+               </svg>
+              </button>
+              <div class="filter-subitem__content">
+               <button class="filter-subitem__link filter-subitem__link--selected" type="button">Canon LBP 2900</button>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+
+         <div class="filter-group">
+          <button class="filter-group__header filter-group__header--no-submenu" type="button">
+           <span class="filter-group__title">HP</span>
+          </button>
+         </div>
+
+         <div class="filter-group">
+          <button class="filter-group__header filter-group__header--no-submenu" type="button">
+           <span class="filter-group__title">Kyocera</span>
+          </button>
+         </div>
+
+         <div class="filter-group">
+          <button class="filter-group__header filter-group__header--no-submenu" type="button">
+           <span class="filter-group__title">Lexmark</span>
+          </button>
+         </div>
+
+         <div class="filter-group">
+          <button class="filter-group__header filter-group__header--no-submenu" type="button">
+           <span class="filter-group__title">Panasonic</span>
+          </button>
+         </div>
+
+         <div class="filter-group">
+          <button class="filter-group__header filter-group__header--no-submenu" type="button">
+           <span class="filter-group__title">Ricoh</span>
+          </button>
+         </div>
+
+         <div class="filter-group">
+          <button class="filter-group__header filter-group__header--no-submenu" type="button">
+           <span class="filter-group__title">Samsung</span>
+          </button>
+         </div>
+
+         <div class="filter-group">
+          <button class="filter-group__header filter-group__header--no-submenu" type="button">
+           <span class="filter-group__title">Xerox</span>
+          </button>
+         </div>
+
+         <div class="filter-group">
+          <button class="filter-group__header filter-group__header--no-submenu" type="button">
+           <span class="filter-group__title">Разное</span>
+          </button>
+         </div>
+
+        </div>
+        <div class="catalog__sidebar-sort-mob catalog-sort">
+         <button type="button" class="catalog-sort__button">
+          <img src="assets/img/catalog/sort.svg" alt="">
+         </button>
+         <div class="catalog-sort__dropdown">
+          <button type="button" class="catalog-sort__item" data-value="price-asc">По возрастанию цены</button>
+          <button type="button" class="catalog-sort__item" data-value="price-desc">По убыванию цены</button>
+          <button type="button" class="catalog-sort__item" data-value="name-asc">По названию А-Я</button>
+          <button type="button" class="catalog-sort__item" data-value="name-desc">По названию Я-А</button>
+         </div>
+        </div>
+       </div>
+
+      </aside>
+
+      <div class="catalog__content">
+       <div class="catalog__controls">
+        <form class="catalog-search">
+         <input type="text" class="catalog-search__input" placeholder="Найти">
+         <button type="submit" class="catalog-search__button">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+           <path
+            d="M14 14L11.1 11.1M12.6667 7.33333C12.6667 10.2789 10.2789 12.6667 7.33333 12.6667C4.38781 12.6667 2 10.2789 2 7.33333C2 4.38781 4.38781 2 7.33333 2C10.2789 2 12.6667 4.38781 12.6667 7.33333Z"
+            stroke="#E61010" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+         </button>
+        </form>
+
+        <div class="catalog-sort">
+         <button type="button" class="catalog-sort__button">
+          <span class="catalog-sort__text">По возрастанию цены</span>
+          <svg class="catalog-sort__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+           fill="none">
+           <path d="M4 6L8 10L12 6" stroke="#00438A" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+         </button>
+         <div class="catalog-sort__dropdown">
+          <button type="button" class="catalog-sort__item" data-value="price-asc">По возрастанию цены</button>
+          <button type="button" class="catalog-sort__item" data-value="price-desc">По убыванию цены</button>
+          <button type="button" class="catalog-sort__item" data-value="name-asc">По названию А-Я</button>
+          <button type="button" class="catalog-sort__item" data-value="name-desc">По названию Я-А</button>
+         </div>
+        </div>
+       </div>
+
+       <div class="catalog__products">
+
+        <div class="product-card">
+         <div class="product-card__img">
+          <img src="assets/img/catalog/1.jpg" alt="Brand">
+         </div>
+         <div class="product-cart__content">
+          <a href="#" class="product-card__title">HP RU5-0175-000000 Original Шестерня привода резинового вала, 108T</a>
+          <div class="product-cart__model">
+           LJ
+           1010/1012/1015/1022/3050/3052/3055/M1120/ Canon FAX-L100/L120/L95/L160
+          </div>
+          <div class="product-cart__bottom">
+           <div class="product-card__price">1000 ₽</div>
+           <button type="button" class="product-card__button btn--outline">В корзину
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+             <g clip-path="url(#clip0_4010_5930)">
+              <path
+               d="M0.667969 0.666748H3.33464L4.8882 9.37808L5.1213 10.6852C5.18226 11.0067 5.34924 11.2955 5.593 11.5011C5.83676 11.7067 6.14177 11.8159 6.45464 11.8096H10.6525H12.9346C13.2475 11.8159 13.5525 11.7067 13.7963 11.5011C14.04 11.2955 14.207 11.0067 14.268 10.6852L14.5059 9.37808L15.3346 4.82548M6.66797 14.635C6.66797 15.0207 6.36949 15.3334 6.0013 15.3334C5.63311 15.3334 5.33464 15.0207 5.33464 14.635C5.33464 14.2493 5.63311 13.9366 6.0013 13.9366C6.36949 13.9366 6.66797 14.2493 6.66797 14.635ZM14.0013 14.635C14.0013 15.0207 13.7028 15.3334 13.3346 15.3334C12.9664 15.3334 12.668 15.0207 12.668 14.635C12.668 14.2493 12.9664 13.9366 13.3346 13.9366C13.7028 13.9366 14.0013 14.2493 14.0013 14.635Z"
+               stroke="#00438A" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M7.27344 4.82275H12.2708" stroke="#00438A" stroke-linecap="round" />
+              <path d="M9.77344 7.32275L9.77344 2.32275" stroke="#00438A" stroke-linecap="round" />
+             </g>
+             <defs>
+              <clipPath id="clip0_4010_5930">
+               <rect width="16" height="16" fill="white" />
+              </clipPath>
+             </defs>
+            </svg>
+           </button>
+          </div>
+         </div>
+
+        </div>
+
+        <div class="product-card">
+         <div class="product-card__img">
+          <img src="assets/img/catalog/1.jpg" alt="Brand">
+         </div>
+         <div class="product-cart__content">
+          <a href="#" class="product-card__title">HP RU5-0175-000000 Original Шестерня привода резинового вала, 108T</a>
+          <div class="product-cart__model">
+           LJ
+           1010/1012/1015/1022/3050/3052/3055/M1120/ Canon FAX-L100/L120/L95/L160
+          </div>
+          <div class="product-cart__bottom">
+           <div class="product-card__price">1000 ₽</div>
+           <button type="button" class="product-card__button btn--outline">В корзину
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+             <g clip-path="url(#clip0_4010_5930)">
+              <path
+               d="M0.667969 0.666748H3.33464L4.8882 9.37808L5.1213 10.6852C5.18226 11.0067 5.34924 11.2955 5.593 11.5011C5.83676 11.7067 6.14177 11.8159 6.45464 11.8096H10.6525H12.9346C13.2475 11.8159 13.5525 11.7067 13.7963 11.5011C14.04 11.2955 14.207 11.0067 14.268 10.6852L14.5059 9.37808L15.3346 4.82548M6.66797 14.635C6.66797 15.0207 6.36949 15.3334 6.0013 15.3334C5.63311 15.3334 5.33464 15.0207 5.33464 14.635C5.33464 14.2493 5.63311 13.9366 6.0013 13.9366C6.36949 13.9366 6.66797 14.2493 6.66797 14.635ZM14.0013 14.635C14.0013 15.0207 13.7028 15.3334 13.3346 15.3334C12.9664 15.3334 12.668 15.0207 12.668 14.635C12.668 14.2493 12.9664 13.9366 13.3346 13.9366C13.7028 13.9366 14.0013 14.2493 14.0013 14.635Z"
+               stroke="#00438A" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M7.27344 4.82275H12.2708" stroke="#00438A" stroke-linecap="round" />
+              <path d="M9.77344 7.32275L9.77344 2.32275" stroke="#00438A" stroke-linecap="round" />
+             </g>
+             <defs>
+              <clipPath id="clip0_4010_5930">
+               <rect width="16" height="16" fill="white" />
+              </clipPath>
+             </defs>
+            </svg>
+           </button>
+          </div>
+         </div>
+
+        </div>
+
+        <div class="product-card">
+         <div class="product-card__img">
+          <img src="assets/img/catalog/1.jpg" alt="Brand">
+         </div>
+         <div class="product-cart__content">
+          <a href="#" class="product-card__title">HP RU5-0175-000000 Original Шестерня привода резинового вала, 108T</a>
+          <div class="product-cart__model">
+           LJ
+           1010/1012/1015/1022/3050/3052/3055/M1120/ Canon FAX-L100/L120/L95/L160
+          </div>
+          <div class="product-cart__bottom">
+           <div class="product-card__price">1000 ₽</div>
+           <button type="button" class="product-card__button btn--outline">В корзину
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+             <g clip-path="url(#clip0_4010_5930)">
+              <path
+               d="M0.667969 0.666748H3.33464L4.8882 9.37808L5.1213 10.6852C5.18226 11.0067 5.34924 11.2955 5.593 11.5011C5.83676 11.7067 6.14177 11.8159 6.45464 11.8096H10.6525H12.9346C13.2475 11.8159 13.5525 11.7067 13.7963 11.5011C14.04 11.2955 14.207 11.0067 14.268 10.6852L14.5059 9.37808L15.3346 4.82548M6.66797 14.635C6.66797 15.0207 6.36949 15.3334 6.0013 15.3334C5.63311 15.3334 5.33464 15.0207 5.33464 14.635C5.33464 14.2493 5.63311 13.9366 6.0013 13.9366C6.36949 13.9366 6.66797 14.2493 6.66797 14.635ZM14.0013 14.635C14.0013 15.0207 13.7028 15.3334 13.3346 15.3334C12.9664 15.3334 12.668 15.0207 12.668 14.635C12.668 14.2493 12.9664 13.9366 13.3346 13.9366C13.7028 13.9366 14.0013 14.2493 14.0013 14.635Z"
+               stroke="#00438A" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M7.27344 4.82275H12.2708" stroke="#00438A" stroke-linecap="round" />
+              <path d="M9.77344 7.32275L9.77344 2.32275" stroke="#00438A" stroke-linecap="round" />
+             </g>
+             <defs>
+              <clipPath id="clip0_4010_5930">
+               <rect width="16" height="16" fill="white" />
+              </clipPath>
+             </defs>
+            </svg>
+           </button>
+          </div>
+         </div>
+
+        </div>
+
+        <div class="product-card">
+         <div class="product-card__img">
+          <img src="assets/img/catalog/1.jpg" alt="Brand">
+         </div>
+         <div class="product-cart__content">
+          <a href="#" class="product-card__title">HP RU5-0175-000000 Original Шестерня привода резинового вала, 108T</a>
+          <div class="product-cart__model">
+           LJ
+           1010/1012/1015/1022/3050/3052/3055/M1120/ Canon FAX-L100/L120/L95/L160
+          </div>
+          <div class="product-cart__bottom">
+           <div class="product-card__price">1000 ₽</div>
+           <button type="button" class="product-card__button btn--outline">В корзину
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+             <g clip-path="url(#clip0_4010_5930)">
+              <path
+               d="M0.667969 0.666748H3.33464L4.8882 9.37808L5.1213 10.6852C5.18226 11.0067 5.34924 11.2955 5.593 11.5011C5.83676 11.7067 6.14177 11.8159 6.45464 11.8096H10.6525H12.9346C13.2475 11.8159 13.5525 11.7067 13.7963 11.5011C14.04 11.2955 14.207 11.0067 14.268 10.6852L14.5059 9.37808L15.3346 4.82548M6.66797 14.635C6.66797 15.0207 6.36949 15.3334 6.0013 15.3334C5.63311 15.3334 5.33464 15.0207 5.33464 14.635C5.33464 14.2493 5.63311 13.9366 6.0013 13.9366C6.36949 13.9366 6.66797 14.2493 6.66797 14.635ZM14.0013 14.635C14.0013 15.0207 13.7028 15.3334 13.3346 15.3334C12.9664 15.3334 12.668 15.0207 12.668 14.635C12.668 14.2493 12.9664 13.9366 13.3346 13.9366C13.7028 13.9366 14.0013 14.2493 14.0013 14.635Z"
+               stroke="#00438A" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M7.27344 4.82275H12.2708" stroke="#00438A" stroke-linecap="round" />
+              <path d="M9.77344 7.32275L9.77344 2.32275" stroke="#00438A" stroke-linecap="round" />
+             </g>
+             <defs>
+              <clipPath id="clip0_4010_5930">
+               <rect width="16" height="16" fill="white" />
+              </clipPath>
+             </defs>
+            </svg>
+           </button>
+          </div>
+         </div>
+
+        </div>
+
+        <div class="product-card">
+         <div class="product-card__img">
+          <img src="assets/img/catalog/1.jpg" alt="Brand">
+         </div>
+         <div class="product-cart__content">
+          <a href="#" class="product-card__title">HP RU5-0175-000000 Original Шестерня привода резинового вала, 108T</a>
+          <div class="product-cart__model">
+           LJ
+           1010/1012/1015/1022/3050/3052/3055/M1120/ Canon FAX-L100/L120/L95/L160
+          </div>
+          <div class="product-cart__bottom">
+           <div class="product-card__price">1000 ₽</div>
+           <button type="button" class="product-card__button btn--outline">В корзину
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+             <g clip-path="url(#clip0_4010_5930)">
+              <path
+               d="M0.667969 0.666748H3.33464L4.8882 9.37808L5.1213 10.6852C5.18226 11.0067 5.34924 11.2955 5.593 11.5011C5.83676 11.7067 6.14177 11.8159 6.45464 11.8096H10.6525H12.9346C13.2475 11.8159 13.5525 11.7067 13.7963 11.5011C14.04 11.2955 14.207 11.0067 14.268 10.6852L14.5059 9.37808L15.3346 4.82548M6.66797 14.635C6.66797 15.0207 6.36949 15.3334 6.0013 15.3334C5.63311 15.3334 5.33464 15.0207 5.33464 14.635C5.33464 14.2493 5.63311 13.9366 6.0013 13.9366C6.36949 13.9366 6.66797 14.2493 6.66797 14.635ZM14.0013 14.635C14.0013 15.0207 13.7028 15.3334 13.3346 15.3334C12.9664 15.3334 12.668 15.0207 12.668 14.635C12.668 14.2493 12.9664 13.9366 13.3346 13.9366C13.7028 13.9366 14.0013 14.2493 14.0013 14.635Z"
+               stroke="#00438A" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M7.27344 4.82275H12.2708" stroke="#00438A" stroke-linecap="round" />
+              <path d="M9.77344 7.32275L9.77344 2.32275" stroke="#00438A" stroke-linecap="round" />
+             </g>
+             <defs>
+              <clipPath id="clip0_4010_5930">
+               <rect width="16" height="16" fill="white" />
+              </clipPath>
+             </defs>
+            </svg>
+           </button>
+          </div>
+         </div>
+
+        </div>
+
+        <div class="product-card">
+         <div class="product-card__img">
+          <img src="assets/img/catalog/1.jpg" alt="Brand">
+         </div>
+         <div class="product-cart__content">
+          <a href="#" class="product-card__title">HP RU5-0175-000000 Original Шестерня привода резинового вала, 108T</a>
+          <div class="product-cart__model">
+           LJ
+           1010/1012/1015/1022/3050/3052/3055/M1120/ Canon FAX-L100/L120/L95/L160
+          </div>
+          <div class="product-cart__bottom">
+           <div class="product-card__price">1000 ₽</div>
+           <button type="button" class="product-card__button btn--outline">В корзину
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+             <g clip-path="url(#clip0_4010_5930)">
+              <path
+               d="M0.667969 0.666748H3.33464L4.8882 9.37808L5.1213 10.6852C5.18226 11.0067 5.34924 11.2955 5.593 11.5011C5.83676 11.7067 6.14177 11.8159 6.45464 11.8096H10.6525H12.9346C13.2475 11.8159 13.5525 11.7067 13.7963 11.5011C14.04 11.2955 14.207 11.0067 14.268 10.6852L14.5059 9.37808L15.3346 4.82548M6.66797 14.635C6.66797 15.0207 6.36949 15.3334 6.0013 15.3334C5.63311 15.3334 5.33464 15.0207 5.33464 14.635C5.33464 14.2493 5.63311 13.9366 6.0013 13.9366C6.36949 13.9366 6.66797 14.2493 6.66797 14.635ZM14.0013 14.635C14.0013 15.0207 13.7028 15.3334 13.3346 15.3334C12.9664 15.3334 12.668 15.0207 12.668 14.635C12.668 14.2493 12.9664 13.9366 13.3346 13.9366C13.7028 13.9366 14.0013 14.2493 14.0013 14.635Z"
+               stroke="#00438A" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M7.27344 4.82275H12.2708" stroke="#00438A" stroke-linecap="round" />
+              <path d="M9.77344 7.32275L9.77344 2.32275" stroke="#00438A" stroke-linecap="round" />
+             </g>
+             <defs>
+              <clipPath id="clip0_4010_5930">
+               <rect width="16" height="16" fill="white" />
+              </clipPath>
+             </defs>
+            </svg>
+           </button>
+          </div>
+         </div>
+
+        </div>
+
+        <div class="product-card">
+         <div class="product-card__img">
+          <img src="assets/img/catalog/1.jpg" alt="Brand">
+         </div>
+         <div class="product-cart__content">
+          <a href="#" class="product-card__title">HP RU5-0175-000000 Original Шестерня привода резинового вала, 108T</a>
+          <div class="product-cart__model">
+           LJ
+           1010/1012/1015/1022/3050/3052/3055/M1120/ Canon FAX-L100/L120/L95/L160
+          </div>
+          <div class="product-cart__bottom">
+           <div class="product-card__price">1000 ₽</div>
+           <button type="button" class="product-card__button btn--outline">В корзину
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+             <g clip-path="url(#clip0_4010_5930)">
+              <path
+               d="M0.667969 0.666748H3.33464L4.8882 9.37808L5.1213 10.6852C5.18226 11.0067 5.34924 11.2955 5.593 11.5011C5.83676 11.7067 6.14177 11.8159 6.45464 11.8096H10.6525H12.9346C13.2475 11.8159 13.5525 11.7067 13.7963 11.5011C14.04 11.2955 14.207 11.0067 14.268 10.6852L14.5059 9.37808L15.3346 4.82548M6.66797 14.635C6.66797 15.0207 6.36949 15.3334 6.0013 15.3334C5.63311 15.3334 5.33464 15.0207 5.33464 14.635C5.33464 14.2493 5.63311 13.9366 6.0013 13.9366C6.36949 13.9366 6.66797 14.2493 6.66797 14.635ZM14.0013 14.635C14.0013 15.0207 13.7028 15.3334 13.3346 15.3334C12.9664 15.3334 12.668 15.0207 12.668 14.635C12.668 14.2493 12.9664 13.9366 13.3346 13.9366C13.7028 13.9366 14.0013 14.2493 14.0013 14.635Z"
+               stroke="#00438A" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M7.27344 4.82275H12.2708" stroke="#00438A" stroke-linecap="round" />
+              <path d="M9.77344 7.32275L9.77344 2.32275" stroke="#00438A" stroke-linecap="round" />
+             </g>
+             <defs>
+              <clipPath id="clip0_4010_5930">
+               <rect width="16" height="16" fill="white" />
+              </clipPath>
+             </defs>
+            </svg>
+           </button>
+          </div>
+         </div>
+
+        </div>
+
+        <div class="product-card">
+         <div class="product-card__img">
+          <img src="assets/img/catalog/1.jpg" alt="Brand">
+         </div>
+         <div class="product-cart__content">
+          <a href="#" class="product-card__title">HP RU5-0175-000000 Original Шестерня привода резинового вала, 108T</a>
+          <div class="product-cart__model">
+           LJ
+           1010/1012/1015/1022/3050/3052/3055/M1120/ Canon FAX-L100/L120/L95/L160
+          </div>
+          <div class="product-cart__bottom">
+           <div class="product-card__price">1000 ₽</div>
+           <button type="button" class="product-card__button btn--outline">В корзину
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+             <g clip-path="url(#clip0_4010_5930)">
+              <path
+               d="M0.667969 0.666748H3.33464L4.8882 9.37808L5.1213 10.6852C5.18226 11.0067 5.34924 11.2955 5.593 11.5011C5.83676 11.7067 6.14177 11.8159 6.45464 11.8096H10.6525H12.9346C13.2475 11.8159 13.5525 11.7067 13.7963 11.5011C14.04 11.2955 14.207 11.0067 14.268 10.6852L14.5059 9.37808L15.3346 4.82548M6.66797 14.635C6.66797 15.0207 6.36949 15.3334 6.0013 15.3334C5.63311 15.3334 5.33464 15.0207 5.33464 14.635C5.33464 14.2493 5.63311 13.9366 6.0013 13.9366C6.36949 13.9366 6.66797 14.2493 6.66797 14.635ZM14.0013 14.635C14.0013 15.0207 13.7028 15.3334 13.3346 15.3334C12.9664 15.3334 12.668 15.0207 12.668 14.635C12.668 14.2493 12.9664 13.9366 13.3346 13.9366C13.7028 13.9366 14.0013 14.2493 14.0013 14.635Z"
+               stroke="#00438A" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M7.27344 4.82275H12.2708" stroke="#00438A" stroke-linecap="round" />
+              <path d="M9.77344 7.32275L9.77344 2.32275" stroke="#00438A" stroke-linecap="round" />
+             </g>
+             <defs>
+              <clipPath id="clip0_4010_5930">
+               <rect width="16" height="16" fill="white" />
+              </clipPath>
+             </defs>
+            </svg>
+           </button>
+          </div>
+         </div>
+
+        </div>
+
+        <div class="product-card">
+         <div class="product-card__img">
+          <img src="assets/img/catalog/1.jpg" alt="Brand">
+         </div>
+         <div class="product-cart__content">
+          <a href="#" class="product-card__title">HP RU5-0175-000000 Original Шестерня привода резинового вала, 108T</a>
+          <div class="product-cart__model">
+           LJ
+           1010/1012/1015/1022/3050/3052/3055/M1120/ Canon FAX-L100/L120/L95/L160
+          </div>
+          <div class="product-cart__bottom">
+           <div class="product-card__price">1000 ₽</div>
+           <button type="button" class="product-card__button btn--outline">В корзину
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+             <g clip-path="url(#clip0_4010_5930)">
+              <path
+               d="M0.667969 0.666748H3.33464L4.8882 9.37808L5.1213 10.6852C5.18226 11.0067 5.34924 11.2955 5.593 11.5011C5.83676 11.7067 6.14177 11.8159 6.45464 11.8096H10.6525H12.9346C13.2475 11.8159 13.5525 11.7067 13.7963 11.5011C14.04 11.2955 14.207 11.0067 14.268 10.6852L14.5059 9.37808L15.3346 4.82548M6.66797 14.635C6.66797 15.0207 6.36949 15.3334 6.0013 15.3334C5.63311 15.3334 5.33464 15.0207 5.33464 14.635C5.33464 14.2493 5.63311 13.9366 6.0013 13.9366C6.36949 13.9366 6.66797 14.2493 6.66797 14.635ZM14.0013 14.635C14.0013 15.0207 13.7028 15.3334 13.3346 15.3334C12.9664 15.3334 12.668 15.0207 12.668 14.635C12.668 14.2493 12.9664 13.9366 13.3346 13.9366C13.7028 13.9366 14.0013 14.2493 14.0013 14.635Z"
+               stroke="#00438A" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M7.27344 4.82275H12.2708" stroke="#00438A" stroke-linecap="round" />
+              <path d="M9.77344 7.32275L9.77344 2.32275" stroke="#00438A" stroke-linecap="round" />
+             </g>
+             <defs>
+              <clipPath id="clip0_4010_5930">
+               <rect width="16" height="16" fill="white" />
+              </clipPath>
+             </defs>
+            </svg>
+           </button>
+          </div>
+         </div>
+
+        </div>
+
+
+       </div>
+
+       <div class="catalog__pagination pagination">
+        <button type="button" class="pagination__btn  product-card__button--disabled pagination__prev">
+         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+          <path d="M25.3346 15.9998H6.66797M6.66797 15.9998L16.0013 25.3332M6.66797 15.9998L16.0013 6.6665"
+           stroke="#00438A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+         </svg>
+        </button>
+        <div class="pagination__items">
+         <button type="button" class="pagination__item pagination__item--active">1</button>
+         <button type="button" class="pagination__item">2</button>
+         <button type="button" class="pagination__item">3</button>
+         <button type="button" class="pagination__item">4</button>
+         <span class="pagination__dots">...</span>
+         <button type="button" class="pagination__item">15</button>
+        </div>
+        <button type="button" class="pagination__btn pagination__next">
+         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+          <path d="M6.66797 15.9998H25.3346M25.3346 15.9998L16.0013 6.6665M25.3346 15.9998L16.0013 25.3332"
+           stroke="#00438A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+         </svg>
+        </button>
+       </div>
+
+      </div>
+     </div>
+    </div>
+   </section>
+
+  </main>
+
+
+  <footer class="footer">
+  </footer>
+ </div>
+
+ <!-- JS -->
+ <script src="assets/js/libs/jquery.min.js"></script>
+ <script src="assets/js/libs/swiper-bundle.min.js"></script>
+ <script src="assets/js/base.js"></script>
+ <script src="assets/js/catalog.js"></script>
+</body>
+
+</html>
